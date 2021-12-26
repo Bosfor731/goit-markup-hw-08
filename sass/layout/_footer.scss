@@ -5,8 +5,32 @@
 }
 
 .footer__container {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    }
 }
+
+.footer__container-address {
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
+}
+
+.footer__container-link {
+  margin-bottom: 60px;
+  text-align: center;
+  }
 
 .footer__web-logo {
   font-family: Raleway;
@@ -39,14 +63,17 @@
   }
 }
 
-.footer__container-link {
-  margin-left: 70px;
-}
+// .footer__container-link {
+//   margin-left: 70px;
+// }
 
 .footer__container-link__title {
   @include font(400, 14px, 1.14, 100%);
   vertical-align: Top;
   color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
 }
 
 .footer__mailto {
@@ -75,6 +102,7 @@
 
 .footer__social-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer__social-link {
@@ -109,12 +137,19 @@
 }
 
 .footer__container-subscription {
-  margin-left: 93px;
+  // margin-left: 93px;
+    text-align: center;
+    // @media screen and (min-width: 1200px) {
+    //   display: flex;
+    //   flex-wrap: nowrap;
+    // }
 }
 
 .footer__subscription {
-  display: flex;
-}
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    }
+  }
 
 .footer__subscription-title {
   display: block;
@@ -123,17 +158,25 @@
   @include font(400, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
 }
 
 .footer__subscription-text {
-  width: 358px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
+  width: 450px;
   padding-left: 16px;
   color: var(--main-btn-color);
   background-color: var(--footer-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+  width: 358px;
+  }
   &::placeholder {
     @include flex-min;
     @include font(400, 16px, 1.25, 0.03em);
@@ -143,15 +186,18 @@
 
 .footer__subscription-btn {
   @include flex;
-  margin-left: 12px;
+  // margin-left: 12px;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   padding: 0;
   border: 0;
   cursor: pointer;
   background-color: var(--accent-color);
-
   @include font(700, 16px, 1.87, 0.06em);
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    }
 
   color: var(--main-btn-color);
   border-radius: 4px;

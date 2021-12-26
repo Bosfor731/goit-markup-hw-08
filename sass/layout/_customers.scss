@@ -7,13 +7,17 @@
 .customers__title {
   text-align: center;
   margin-bottom: 50px;
-
-  @include font(700, 36px, 1.17, 100%);
+  @include font(700, 28px, 1.17, 100%);
   color: var(--second-title-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 1.17, 100%);
+  }
 }
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -23,11 +27,18 @@
 
 .customers__link {
   @include flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
+  margin-bottom: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--icon-color);
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
   &:hover {
     padding: 16px 32px 16px 32px;
     background-color: var(--main-title-color);

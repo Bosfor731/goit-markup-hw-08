@@ -1,12 +1,13 @@
 .header {
   background: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-  @include flex-min;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__navigation {
@@ -27,9 +28,9 @@
 
 .header__list {
   display: flex;
-}
+  }
 
-.header__item:not(:last-child) {
+  .header__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -106,6 +107,7 @@
     color: var(--accent-color);
   }
 }
+
 .header__tel-.header__link {
   &:focus {
     color: var(--accent-color);
@@ -122,4 +124,10 @@
   fill: currentColor;
   align-items: center;
   margin-right: 10px;
+}
+
+.header__works {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

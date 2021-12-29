@@ -28,6 +28,9 @@
   transform: scale(1) rotate(0);
   transform: translate(-50%, -50%);
   transition: transform 500ms;
+  @media screen and (max-width:1199px) {
+    width: 450px;
+  }
 }
 
 .modal-close {
@@ -146,6 +149,9 @@
   @include flex;
   @include font(400, 14px, 1.71, 0.03em);
   color: var(--main-text-color);
+  @media screen and (max-width:1199px) {
+    @include font(400, 12px, 1.17, 0.03em);
+  }
 }
 
 .check-item {

@@ -22,10 +22,10 @@
   border: none;
   background-color: #ffffff;
   &:hover {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
   &:focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
 .mob-menu-close {
@@ -37,10 +37,10 @@
   border: none;
   background-color: #ffffff;
   &:hover {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
   &:focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
 

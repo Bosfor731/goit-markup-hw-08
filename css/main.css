@@ -338,11 +338,11 @@ body {
 }
 
 .mob-menu-open:hover {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .mob-menu-open:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .mob-menu-close {
@@ -356,11 +356,11 @@ body {
 }
 
 .mob-menu-close:hover {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .mob-menu-close:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {

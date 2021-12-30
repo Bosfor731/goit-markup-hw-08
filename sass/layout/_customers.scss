@@ -1,16 +1,21 @@
 .customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--main-btn-color);
+  @media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--main-btn-color);
+  }
 }
 
 .customers__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   @include font(700, 28px, 1.17, 100%);
   color: var(--second-title-color);
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     @include font(700, 36px, 1.17, 100%);
   }
 }
@@ -23,19 +28,32 @@
 
 .customers__item {
   display: flex;
+  margin-bottom: 30px;
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(n + 4) {
+    margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .customers__link {
   @include flex;
   width: 210px;
   height: 92px;
-  margin-bottom: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--icon-color);
+  
   @media screen and (min-width: 768px) {
     width: 226px;
-  }
+    }
+  
   @media screen and (min-width: 1200px) {
     width: 170px;
   }

@@ -24,12 +24,17 @@
   text-align: center;
   @media screen and (min-width: 1200px) {
     text-align: left;
+    margin-bottom: 0;
     }
 }
 
 .footer__container-link {
   margin-bottom: 60px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+    }
   }
 
 .footer__web-logo {
@@ -63,12 +68,8 @@
   }
 }
 
-// .footer__container-link {
-//   margin-left: 70px;
-// }
-
 .footer__container-link__title {
-  @include font(400, 14px, 1.14, 100%);
+  @include font(700, 14px, 1.14, 0.03em);
   vertical-align: Top;
   color: var(--main-title-color);
   @media screen and (min-width: 1200px) {
